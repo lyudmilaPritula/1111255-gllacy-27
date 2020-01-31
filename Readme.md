@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Людмила Притула](https://up.htmlacademy.ru/htmlcss/27/user/1111255).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Григорьев](https://htmlacademy.ru/profile/fuckhtml).
 
 ---
 
