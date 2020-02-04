@@ -5,23 +5,49 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-  	<header>
-  		<nav>
-  			<img src="logo.svg" width="155" height="73" alt="">
-  			<ul>
-  				<li>Каталог</li>
-  				<li><a href="#">Доставка и оплата</a></li>
-  				<li><a href="#">О компании</a></li>
-  			</ul>
-  			<ul>
-  				<li><button></button></li>
-  				<li><button>Вход</button></li>
-  				<li><button>2 товара</button></li>
-  			</ul>
-        <p> C 10 до 20, ежедневно</p>
-        <p>8 812 450-25-25</p>
-  		</nav>
-  	</header>
+
+  	<header class="main-header">
+  
+      <a href="index.html">
+        <span class="visually-hidden">На главную</span>
+        <img src="" alt="Логотип магазина мороженого Глейси">
+      </a>
+  
+    <nav class="main-nav">
+      <ul class="site-nav">
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О компании</a></li>
+      </ul>
+      
+      <div class="search">
+        <input type="search" placeholder="Поиск по сайту">
+      </div>
+    
+      <ul class="user-nav">
+         <li><a href="login.html">Вход</a></li>
+         <li>
+           <a href="basket.html">
+             <span class="visually-hidden">Корзина:</span>
+             Пусто
+           </a>
+         </li>
+      </ul>
+    </nav>
+  
+    <div class="schedule">
+      <p class="time">
+        <span class="visually-hidden">Расписание: </span>
+        с 10 до 20, ежедневно
+      </p>
+     
+      <p class="phone">
+        <span class="visualyy-hidden">Телефон: </span>
+        <a href="tel:+78124502525">8 812 450-25-25</a>
+      </p>
+    </div>
+    
+    </header>
     <main>
       <ul>
         <li><a href="index.html">Главная</a></li>
