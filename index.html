@@ -57,30 +57,98 @@
 
   			<ul class="fact-info">
 
-  				<li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+  				<li class="fact-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
 
-  				<li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</li>
+  				<li class="fact-2">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</li>
 
-  				<li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+  				<li class="fact-3">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
 
-  				<li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+  				<li class="fact-4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
 
   			</ul>
-
   		</section>
 
   		<article class="blog">
-
-        
   			<p>Новое в нашем блоге</p>
-  			<a href="#"> 10 способов сервировки фруктовых щербетов к столу
-          <img src="img/.png"></a>
+  			<a href="#"> 10 способов сервировки фруктовых щербетов к столу</a>
   		</article>
-  		<section>
+
+  		<section class="subscription">
+
   			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-  			<input type="" name="email">
-  			<button type="button">Отправить</button>
+
+  			<input type="email" name="email" placeholder="Электронная почта">
+
+  			<a href="subscription.html">Отправить</a>
   		</section>
+
+      <section class="site-nav-paragraph">
+
+        <select name="catalog-paragraph">
+
+          <optgroup label="Новинки">
+
+            <option value="cream"><a href="#">Сливочное</a></option>
+            <option value="sherbet"><a href="#">Щербеты</a></option>
+            <option value="fruct-ice"><a href="#">Фруктовый лёд</a></option>
+            <option value="melorin"><a href="#">Мелорин</a></option>
+
+          </optgroup>
+
+        </select>
+        
+      </section>
+
+      <section class="search-entry-field">
+
+        <label class="visually-hidden">Поиск по сайту</label>
+        <input type="search" placeholder="Что ищем?">
+        
+      </section>
+
+      
+      
+      <section class="access">
+
+        <span class="visually-hidden"> Личный кабинет</span>
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+
+          <label class="visually-hidden" for="email">Электронная почта:</label>
+          <input type="email" name="email" id="email" placeholder="Электронная почта">
+          <label class="visually-hidden" for="password">Пароль:</label>
+          <input type="password" name="password" id="password" placeholder="Пароль">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+            <button type="submit">Войти</button>
+          
+        </form>
+      </section>
+
+      <section class="subscription">
+
+      <h2>Мы обязательно вам ответим!</h2>
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+
+        <label class="visually-hidden" for="name">Имя</label>
+
+        <input type="text" id="name" name="name" placeholder="Как вас зовут?">
+
+        <label class="visually-hidden" for="email">Электронная почта</label>
+
+        <input type="email" id="email" name="email" placeholder="Ваша почта для ответа?">
+
+        <label class="visually-hidden" for="text-sms">Текст сообщения</label>
+
+        <input type="textarea" name="text-sms" id="text-sms" placeholder="Напишите что-нибудь..">
+        
+
+        <button type="submit">Отправить</button>
+        
+      </form>
+      </section>
+
   	</main>
 
   	<footer>
