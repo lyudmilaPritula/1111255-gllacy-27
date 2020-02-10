@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -10,12 +13,12 @@
   
       <a href="index.html">
         <span class="visually-hidden">На главную</span>
-        <img src="" alt="Логотип магазина мороженого Глейси">
+        <img src="img/Logo.png" alt="Логотип магазина мороженого Глейси">
       </a>
   
     <nav class="main-nav">
       <ul class="site-nav">
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a  class="active" href="catalog.html">Каталог</a></li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
@@ -49,13 +52,13 @@
     
     </header>
     <main>
-      <ul>
+      <ul class="navig-site-catalog">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li>Сливочное</li>
       </ul>
       <h1>Сливочное мороженое</h1>
-      <section>
+      <section class="catalog-ice-cream">
         <ul>
           <li>
             <h3> 310 ₽/кг </h3>
@@ -176,35 +179,58 @@
           </table>
 
         <button class="submit"> Оформить заказ</button>
-        
-         
-
-        
       </section>
     </main>
 
-      <footer>
-      <div>
+  <footer>
+
+      <div class="social">
+
+       <span class="visually-hidden">Социальные сети:</span>
+
         <ul>
-        <li><a href="#">Твиттер</a></li>
-          <li><a href="#">Инстаграм</a></li>
-            <li><a href="#">Фейсбук</a></li>
-            <li><a href="#">Вконтакте</a></li>
+
+        <li>
+          <a href="#"><span class="visually-hidden">Твиттер</span></a>
+        </li>
+
+        <li>
+          <a href="#"><span class="visually-hidden">Инстаграм</span></a>
+        </li>
+
+        <li>
+          <a href="#"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+
+         <li>
+          <a href="#"><span class="visually-hidden">Вконтакте</span></a>
+        </li>
+
         </ul>
       </div>
-      <ul>
+
+      <div class="documents">
+
+      <ul class="partners">
         <li><a href="#">Для поставщиков</a></li>
         <li><a href="#">О производстве</a></li>
       </ul>
-      <ul>
+
+      <ul class="standard-doc">
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
-       <p>
+
+      </div>
+
+       <div class="made-in">
+        <span>
         Сделано в  
         <a href="https://htmlacademy.ru">HTML Academy</a>
         2019
-      </p>
+        </span>
+      </div>
+
     </footer>
 
   </body>
