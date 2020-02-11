@@ -25,10 +25,53 @@ button{
 ul {
   list-style: none;
 }
-.site-nav{
-  font-weight: bold;
+.main-nav{
+  width: 100%;
 }
+.main-header{
+  min-height: 75px;
+}
+.main-header-navigation{
+  min-height: 75px;
+  display: flex;
+  flex-direction: row;
+  width: 1150px;
+  margin: 0 auto;
 
+}
+.main-header-Logo{
+  width: 160px;
+  height: 73px;
+
+}
+.site-nav{
+  min-height: 70px;
+  width: 360px;
+  font-weight: bold;
+
+}
+.container{
+   width: 980px;
+   display: flex;
+   justify-content: space-between;
+}
+.container-user{
+  display: flex;
+}
+.search{
+  min-height: 70px;
+  width: 50px;
+}
+.user-nav{
+  min-height: 70px;
+  width: 200px;
+}
+.container-nav-site{
+  display: flex;
+  flex-direction: column;
+  width: 1150px;
+  margin: 0 auto;
+}
 .site-nav a:hover{
   color:#323232;
   background-image: url("img/fon-withe.png");
@@ -102,9 +145,19 @@ ul {
   text-decoration: none; 
   }
 .user-nav li:first-child{
-  background-image: url("img/enter-black");
+  background-image: url("img/enter.png");
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+.schedule{
+ display: flex;
+ flex-direction: column;
+ width: 1150px;
+ margin:0 auto;
+
+}
+.container-schedule{
+  margin-left: auto;
 }
 .time {
   font-size: 14px;
@@ -120,44 +173,74 @@ ul {
 .phone a{
   text-decoration: none;
 }
+.container-fact{
+display: flex;
+flex-wrap: wrap;
+margin-left: 80px;
+
+
+
+}
+
 .general-info{
   background-image: url("img/wafer.png");
   background-repeat: no-repeat;
   color: #323232;
-  
+  margin-bottom: 40px;
   min-height: 305px;
-  padding-top: 35px;
-  padding-left: 20px;
+  width: 1150px;
+  margin: 0 auto;
+
 }
-.fact-info li:first-child{
+.fact-info li{
+  width: 480px;
+  margin-bottom: 35px;
+  margin-left: 40px;
+}
+.fact-info .fact-1{
   background-image: url("img/ice-cream.png");
   background-position: top -10px left -10px;
   background-repeat: no-repeat;
   width: 480px;
   min-height: 70px;
 }
-.fact-info li:last-child{
+.fact-info .fact-4{
   background-image: url("img/degree.png");
   background-repeat: no-repeat;
 }
-.fact-info li:nth-child(2){
+.fact-info .fact-2{
   background-image: url("img/sheet.png");
   background-repeat: no-repeat;
 }
-.fact-info li:nth-child(3){
+.fact-info .fact-3{
   background-image: url("img/cow.png");
   background-repeat: no-repeat;
 }
+
+
 .blog{
   background-image: url("img/strawberry.png");
   background-repeat: no-repeat;
   color: #323232;
-  height: 220px;
+  min-height: 220px;
   line-height: 22px;
   font-weight: medium;
   padding-left: 20px;
 }
-
+.fact-info{
+  display: flex;
+}
+.container-blog-sub{
+   display: flex;
+   
+}
+.item-blog{
+  width: 565px;
+  margin-right: 25px;
+}
+.item-sub{
+  width: 570px;
+}
 .blog a{
   color: #323232;
   font-size: 24px;
@@ -172,6 +255,7 @@ ul {
   background-image: url("img/post-office.png");
   background-repeat: no-repeat;
   min-height: 220px;
+  width: 565px;
 }
  .subscription p{
   color: #323232;
@@ -197,7 +281,16 @@ ul {
   text-decoration: none;
   vertical-align: middle;
  }
-
+.container-content{
+  display: flex;
+  width: 1150px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.content-row{
+  display: flex;
+  flex-direction: row;
+}
 .catalog-ice-cream a{
   font-size: 16px;
   line-height: 22px;
@@ -208,6 +301,9 @@ ul {
   line-height: 45px;
   font-weight: bold;
 }
+.catalog-ice-cream li{
+  width: 270px;
+}
 .catalog-ice-cream li:hover{
  background-image: url("img/fon-ice.png");
  background-repeat: no-repeat;
@@ -215,7 +311,23 @@ ul {
 footer{
   font-size: 13px;
   line-height: 18px;
+  min-height: 100px;
 
+}
+.container-footer{
+  display: flex;
+  justify-content: space-between;
+  width: 1150px;
+  margin: 0 auto;
+}
+.social{
+  width: 200px;
+}
+.documents{
+  width: 330;
+}
+.made-in{
+  width: 190px;
 }
 .social li:first-child{
   background-image: url(img/twitter.png);
