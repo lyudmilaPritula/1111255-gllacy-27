@@ -13,7 +13,7 @@ body{
 .search-entry-field,
 .site-nav-paragraph,
 .full-basket{
-  /*display: none;*/
+  display: none;
 }
 a{
   color: #ffffff;
@@ -52,8 +52,35 @@ input[type="radio"].visually-hidden {
 
 .main-header{
   min-height: 75px;
+
+}
+.site-wrapper {
+  min-width: 940px;
+  
+  width: 100%;
+  height: 100%;
+  background-color: #849d8f;
+  background-image: url("../img/slider-item1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+  
+  }
+
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
 }
 
+.site-wrapper::before {
+  background-image: url("../img/slider-item2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("../img/slider-item3.png");
+}
 .main-header-Logo{
   width: 160px;
   height: 73px;
@@ -227,6 +254,167 @@ ul.navig-site-catalog{
 
 .phone a{
   text-decoration: none;
+}
+
+.slider {
+  position: relative;
+  bottom: 76px;
+  padding-top: 361px;
+  
+  text-align: center;
+  color: #ffffff;
+}
+.slider-list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 44px;
+
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+
+  cursor: pointer;
+}
+.button:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+ 
+  font-size: 0;
+}
+.slide {
+  display: none;
+}
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slider-item1.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/slider-item2.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/slider-item3.png");
+}
+.addition{
+  display: flex;
+  margin-left: 25px;
+  margin-bottom: 43px;
+}
+.raspberries{
+  background-image: url("../img/raspberries.jpg");
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 560px;
+  height: 230px;
+  border-radius: 15px;
+  padding-left: 25px;
+  margin-right: 27px;
+  
+}
+.chocolate{
+  background-image: url("../img/chocolate.png");
+  background-repeat: no-repeat;
+  width: 560px;
+  box-sizing: border-box;
+  height: 230px;
+  border-radius: 10px;
+   padding-left: 25px;
+  
+}
+.raspberries h2, 
+.chocolate h2{
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  margin-top: 25px;
+  
+}
+.raspberries p, 
+.chocolate p{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-top: 28px;
+}
+.addition-button{
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400px;
+  padding: 15px 27px;
+   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  margin-left: auto;
+  margin-right: 20px;
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+ text-decoration: none;
+  cursor: pointer;
 }
 .general-info{
   background-image: url("../img/wafer.png");
@@ -463,6 +651,7 @@ footer .container{
 
 .modal{
   background-color: #f8f7f4;
+  display: none;
   color: #323232;
   border: 0;
   position: absolute;
