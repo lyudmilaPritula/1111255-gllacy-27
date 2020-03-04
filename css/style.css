@@ -74,10 +74,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/slider-item3.png");
 }
 
-.main-header-Logo {
+.main-header-logo {
   width: 160px;
   height: 73px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .wrapper{
@@ -131,6 +131,7 @@ nav.main-nav{
   border: 1px solid transparent;
   border-radius: 20px;
   padding: 10px;
+  margin-top: 5px;
 }
 
 .site-nav li:hover a{
@@ -199,6 +200,7 @@ ul.navig-site-catalog {
   padding: 0;
   margin: 0;
   padding-top: 23px;
+  height: 37px;
 }
 
 .user-nav a {
@@ -228,6 +230,10 @@ ul.navig-site-catalog {
 
 .search-nav a:hover svg {
    fill: #323232;
+}
+
+p.search-nav {
+  height: 28px;
 }
 
 .time {
@@ -534,17 +540,17 @@ ul.fact-info {
   justify-content: space-between;
 }
 
-.ice-cream-card {
+.icecream-card {
   position: relative;
   width: 295px;
   height: 407px;
 }
 
-.ice-cream-card ul {
+.icecream-card ul {
   padding: 0;
 }
 
-.ice-cream-card h3 {
+.icecream-card h3 {
   font-size: 16px;
   line-height: 22px;
   position: absolute;
@@ -556,7 +562,7 @@ ul.fact-info {
   text-decoration: underline;
 }
 
-.ice-cream-card span{
+.icecream-card span{
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
@@ -565,13 +571,13 @@ ul.fact-info {
   z-index: 3;
 }
 
-.ice-cream-card li {
+.icecream-card li {
   width: 295px;
   height: 407px;
-  padding-left: 22px;
+  
 }
 
-.ice-cream-card a.submit {
+.icecream-card a.submit {
   width: 203px;
   height: 47px;
   font-size: 18px;
@@ -592,23 +598,32 @@ ul.fact-info {
   border: none;
   cursor: pointer;
   bottom: 20px;
+  margin-left: 48px;
+  padding-left: 0px;
 }
 
-article.ice-cream-card :hover {
-  background: #f8f7f4;
-  opacity: 0.2;
+article.icecream-card{
+  padding-left: 20px;
+}
+article.icecream-card:hover {
+  background-image: url("../img/fon-ice.png");
   border-radius: 10px;
+  padding-left: 20px;
+}
+article.icearev-cafd img {
+  margin-left: 10px;
 }
 
-article.ice-cream-card:hover a.submit {
+article.icecream-card:hover a.submit {
   display: block;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
   border: none;
   cursor: pointer;
+  padding-left: 20px;
 }
 
-.catalog-ice-cream svg {
+.catalogice-cream svg {
   position: absolute;
   z-index: 3;
 }
@@ -690,7 +705,7 @@ footer .wrapper {
   justify-content: space-between;
 }
 
-.social-site {
+.social-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -698,12 +713,28 @@ footer .wrapper {
   margin-bottom: 10px;
 }
 
-.documents {
+.column-2 {
   display: flex;
   flex-wrap: wrap;
+  width: 336px;
+  flex-direction: row;
+
 }
 
-.made-in {
+.partners a:nth-child(1) {
+  min-height: 40px;
+
+}
+
+ul.partners {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  padding-top: 15px;
+
+
+}
+.column-3 {
   width: 190px;
 }
 
@@ -720,12 +751,12 @@ footer .wrapper {
   opacity: 1.0;
 }
 
-.partners li:first-child {
+a.column2-bold {
   font-weight: bold;
-  min-height: 40px;
+padding-left: -20px;
 }
 
-.made-in svg {
+.column-3 svg {
   width: 110px;
   height: 45px;
 }
