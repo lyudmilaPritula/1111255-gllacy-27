@@ -77,9 +77,10 @@ input[type="radio"].visually-hidden {
 .main-header-Logo {
   width: 160px;
   height: 73px;
+  margin-top: 10px;
 }
 
-.container {
+.wrapper{
   width: 1200px;
   padding-left: 27px;
   padding-right: 27px;
@@ -103,7 +104,9 @@ nav.main-nav{
   margin-left: auto;
   padding-top: 13px;
 }
-
+.search-nav input{
+  background-image: url(../img/loupe.svg);
+}
 
 .user-nav svg,
 .search-nav svg {
@@ -239,12 +242,12 @@ ul.navig-site-catalog {
   font-weight: bold;
 }
 
-.main-header.container {
+.main-header.wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.main-header.container.row {
+.main-header.wrapper.row {
   width: 100%;
 }
 
@@ -413,6 +416,11 @@ ul.navig-site-catalog {
   cursor: pointer;
 }
 
+.heading h2{
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
 .general-info {
   background-image: url("../img/wafer.png");
   background-repeat: no-repeat;
@@ -526,57 +534,78 @@ ul.fact-info {
   justify-content: space-between;
 }
 
-.catalog-ice-cream ul {
+.ice-cream-card {
+  position: relative;
+  width: 295px;
+  height: 407px;
+}
+
+.ice-cream-card ul {
   padding: 0;
 }
 
-.catalog-ice-cream a {
+.ice-cream-card h3 {
   font-size: 16px;
   line-height: 22px;
-  font-weight: medium;
-  margin-top: 280px;
   position: absolute;
-  z-index: 3;
+  z-index: 5;
+  font-weight: 400;
   text-align: center;
+  margin: 0;
+  bottom: 77px;
+  text-decoration: underline;
 }
 
-.catalog-ice-cream h3 {
+.ice-cream-card span{
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
-  margin-top: 200px;
+  margin-top: 222px;
   position: absolute;
   z-index: 3;
 }
 
-.catalog-ice-cream li {
+.ice-cream-card li {
   width: 295px;
   height: 407px;
   padding-left: 22px;
 }
 
-.catalog-ice-cream li:hover {
-  background-image: url("../img/fon-ice.png");
-  background-repeat: no-repeat;
- border-radius: 10px;
-}
-
-.catalog-ice-cream button {
+.ice-cream-card a.submit {
+  width: 203px;
+  height: 47px;
   font-size: 18px;
-  width: 200px;
-  height: 45px;
   line-height: 24px;
   color: #fefefe;
-  margin-top: 70px;
-  margin-left: 40px;
-  margin-bottom: 20px;
-  background-color: #e84d37;
-  border: 2px solid #e84d37;
+  padding-top: 10px;
+  box-sizing: border-box;
   border-radius: 25px;
-  box-shadow: 0 2px 3px #ac1000;
-  padding: 10px;
   text-decoration: none;
   vertical-align: middle;
+  text-align: center;
+  display: none;
+  position: absolute;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+  bottom: 20px;
+}
+
+article.ice-cream-card :hover {
+  background: #f8f7f4;
+  opacity: 0.2;
+  border-radius: 10px;
+}
+
+article.ice-cream-card:hover a.submit {
+  display: block;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  border: none;
+  cursor: pointer;
 }
 
 .catalog-ice-cream svg {
@@ -655,7 +684,7 @@ footer {
   margin-top: 35px;
 }
 
-footer .container {
+footer .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -681,16 +710,13 @@ footer .container {
 .social a {
   width: 32px;
   height: 32px;
-  border: 3px solid transparent;
+  border: 3px solid rgba(255,255,255, 0.8);
   border-radius: 50%;
   display: block;
 }
 
-.social a:hover {
-  border: 3px solid #ffffff;
-}
-
 .social a:hover svg {
+  fill: #ffffff;
   opacity: 1.0;
 }
 
