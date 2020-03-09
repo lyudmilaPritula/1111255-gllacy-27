@@ -640,6 +640,13 @@ article.icecream-card:hover a.submit {
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 430px;
+  z-index: 1;
+}
+
+.map iframe{
+  width: 100%;
+  min-height: 430px;
+  z-index: 3;
 }
 
 .contact {
@@ -691,6 +698,13 @@ h3.address {
   margin-left: 238px;
   margin-top: 141px;
   margin-right: 532px;
+
+}
+
+.map .row{
+  position: absolute;
+  z-index: 25;
+  margin-top: 165px;
 }
 
 footer {
@@ -1023,4 +1037,7 @@ td.price {
   border: 2px solid #ffffff;
   border-radius: 20px;
   color: #ffffff;
+}
+.modal-show{
+  display: block;
 }
