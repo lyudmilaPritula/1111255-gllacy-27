@@ -441,7 +441,7 @@ p.search-nav {
 .general-info h4 {
   font-size: 24px;
   line-height: 30px;
-   font-weight: inherit;
+  font-weight: inherit;
   padding-top: 30px;
   padding-left: 24px;
   margin-bottom: 0;
@@ -627,6 +627,9 @@ article.icecream-card:hover a.submit {
   position: absolute;
   z-index: 3;
 }
+.catalogice-cream ul{
+  padding: 0;
+}
 
 .catalog-paragraph optgroup[label] {
   font-weight: bold;
@@ -639,14 +642,17 @@ article.icecream-card:hover a.submit {
   background-image: url("../img/map.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  min-height: 430px;
+  height: 430px;
   z-index: 1;
 }
 
 .map iframe{
+  position: absolute;
+  padding-bottom: 200px;
+  margin-top: -390px;
   width: 100%;
   min-height: 430px;
-  z-index: 3;
+  z-index: 2;
 }
 
 .contact {
@@ -655,7 +661,7 @@ article.icecream-card:hover a.submit {
   color:#323232;
   width: 304px;
   min-height: 307px;
-  margin-top: 65px;
+  margin-top: 45px;
   padding-left: 26px;
   padding-top: 34px;
 }
@@ -698,13 +704,13 @@ h3.address {
   margin-left: 238px;
   margin-top: 141px;
   margin-right: 532px;
-
+  
 }
 
 .map .row{
-  position: absolute;
-  z-index: 25;
-  margin-top: 165px;
+  position: sticky;
+  bottom: 0px;
+  z-index: 5;
 }
 
 footer {
