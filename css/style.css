@@ -143,7 +143,7 @@ nav.main-nav{
   background: #ffffff;
 }
 
-.site-nav li.active a{
+.site-nav li a.active {
   border: 2px solid #d07058;
   border-radius: 20px;
   padding: 10px;
@@ -152,8 +152,9 @@ nav.main-nav{
   background-color: #d07058;
   }
 
-.site-nav li:focus a {
+.site-nav li a:focus  {
   background-color: #f8f7f4;
+  border: none;
   border-radius: 20px;
   box-shadow: inset 0 2px 5px; 
   padding: 10px;
@@ -577,13 +578,14 @@ ul.fact-info {
   
 }
 
-.icecream-card a.submit {
+.icecream-card a.link {
   width: 203px;
   height: 47px;
   font-size: 18px;
   line-height: 24px;
   color: #fefefe;
   padding-top: 10px;
+  padding-right: 15px;
   box-sizing: border-box;
   border-radius: 25px;
   text-decoration: none;
@@ -603,18 +605,20 @@ ul.fact-info {
 }
 
 article.icecream-card{
-  padding-left: 20px;
+
 }
 article.icecream-card:hover {
   background-image: url("../img/fon-ice.png");
+  
   border-radius: 10px;
-  padding-left: 20px;
+  
 }
-article.icearev-cafd img {
-  margin-left: 10px;
+article.iceaream-card img {
+  width: 263px;
+
 }
 
-article.icecream-card:hover a.submit {
+article.icecream-card:hover a.link {
   display: block;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
@@ -714,8 +718,10 @@ h3.address {
 }
 
 footer {
+  position: relative;
   font-size: 13px;
   line-height: 18px;
+  z-index: 6;
   margin-top: 35px;
 }
 
@@ -741,9 +747,12 @@ footer .wrapper {
 
 }
 
-.partners a:nth-child(1) {
-  min-height: 40px;
+.partners .row {
+  justify-content: space-between;
+}
 
+.column-2 .inden {
+  padding-right: 55px;
 }
 
 ul.partners {
@@ -969,8 +978,9 @@ padding-left: -20px;
   line-height: 16px;
 }
 
-.submit button {
+.link button {
   font-size: 18px;
+  font-weight: bold;
   width: 150px;
   height: 47px;
   line-height: 24px;
@@ -982,6 +992,7 @@ padding-left: -20px;
   border-radius: 25px;
   box-shadow: 0 2px 3px #ac1000;
   padding: 10px;
+  padding-left: 10px;
   text-decoration: none;
   vertical-align: middle;
 }
