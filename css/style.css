@@ -613,9 +613,14 @@ article.icecream-card:hover {
   border-radius: 10px;
   
 }
-article.iceaream-card img {
+article.icecream-card img {
   width: 263px;
+  padding-left: 25px;
+}
 
+article.icecream-card h3,
+article.icecream-card span{
+  padding-left: 25px;
 }
 
 article.icecream-card:hover a.link {
@@ -630,6 +635,7 @@ article.icecream-card:hover a.link {
 .catalogice-cream svg {
   position: absolute;
   z-index: 3;
+  padding-left: 25px;
 }
 .catalogice-cream ul{
   padding: 0;
