@@ -172,6 +172,11 @@ nav.main-nav{
   margin-right: 15px;
 }
 
+.search-nav a {
+  padding-left: 7px; 
+  padding-right: 7px;
+}
+
 .schedule {
   margin-left: auto;
 }
@@ -432,7 +437,7 @@ p.search-nav {
   background-image: url("../img/wafer.png");
   background-repeat: no-repeat;
   color: #323232;
-  min-height: 305px;
+  height: auto;
   width: 1150px;
   margin: 0 auto;
   margin-bottom: 42px;
@@ -527,12 +532,8 @@ ul.fact-info {
 
  .subscription a {
   font-size: 18px;
-  min-height: 25px; 
-  border: 2px solid #e84d37;
   border-radius: 25px;
   padding: 10px;
-  text-decoration: none;
-  vertical-align: middle;
  }
 
 .content-row { 
@@ -585,7 +586,6 @@ ul.fact-info {
   line-height: 24px;
   color: #fefefe;
   padding-top: 10px;
-  padding-right: 15px;
   box-sizing: border-box;
   border-radius: 25px;
   text-decoration: none;
@@ -609,9 +609,7 @@ article.icecream-card{
 }
 article.icecream-card:hover {
   background-image: url("../img/fon-ice.png");
-  
   border-radius: 10px;
-  
 }
 article.icecream-card img {
   width: 263px;
@@ -625,11 +623,14 @@ article.icecream-card span{
 
 article.icecream-card:hover a.link {
   display: block;
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-  background: #f26843;
-  border: none;
-  cursor: pointer;
-  padding-left: 20px;
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+article.icecream-card:active a.link {
+  display: block;
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .catalogice-cream svg {
@@ -645,6 +646,65 @@ article.icecream-card:hover a.link {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+}
+
+.navig-site-catalog li:nth-child(2n){
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.sorting {
+  display: none;
+}
+
+.style-filter p{
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.sort-popularity {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px; 
+  border-radius: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sort-popularity a{
+  text-decoration: none;
+}
+.radio-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 415px;
+}
+.radio-list a {
+
+
+}
+.checkbox-list {
+  width: 705px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.checkbox-list p {
+  margin: 0px;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+.filter {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px; 
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  color: #ffffff;
+  width: 145px;
 }
 
 .map {
@@ -1054,13 +1114,7 @@ td.price {
   font-weight: medium;
 }
 
-.filter {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 10px; 
-  border: 2px solid #ffffff;
-  border-radius: 20px;
-  color: #ffffff;
-}
+
 .modal-show{
   display: block;
 }
