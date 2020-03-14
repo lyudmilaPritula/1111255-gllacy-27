@@ -42,10 +42,10 @@
              </li>
 
              <li>
-               <a href="basket.html">
-               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g ><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
+               <a class="active" href="basket.html">
+               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
                  <span class="visually-hidden">Корзина:</span>
-                 Пусто
+                 2 товара
                </a>
              </li>
           </ul>
@@ -109,27 +109,42 @@
         </div> <!-- /row -->
 
         <div class="row">
-          <a class="sort-popularity" href="#">По популярности 
+          <a class="sort-popularity sort" href="#">По популярности 
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ffffff" d="M5.5 10L0 0h11"/></svg>
           </a>
+
+          <div class="range">
+            <hr class="range-1">
+            <hr class="range-2">
+            <a class="circle-1" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
+            </a>
+            <a class="circle-2" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
+            </a>
+          </div>
 
           <div class="sort-popularity radio-list">
             <a href="">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" opacity="0.8" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>
-              <a href="">0%</a>
             </a>
+              <p>0%</p>
+            
             <a href="">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" opacity="0.8"  d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#FFFFFF" opacity="0.8"  cx="12.5" cy="12.5" r="4.5"/></svg>
-              <span>до 10%</span>
             </a>
+              <p>до 10%</p>
+            
             <a href="">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF"  opacity="0.8" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>
-              <span>до 30%</span>
             </a>
+              <p>до 30%</p>
+            
             <a href="">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" opacity="0.8"  d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>
-              <span>выше 30%</span>
             </a>
+              <p>выше 30%</p>
+            
           </div> 
         </div> <!-- /row -->
         
@@ -165,29 +180,34 @@
           <div class="sort-popularity checkbox-list">
               <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" opacity="0.8"  d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" opacity="0.8"  d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-                <p>шоколадные</p>
               </a>
+                <p>шоколадные</p>
+              
               <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" opacity="0.8"  d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF"  opacity="0.8" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-              
+              </a>
                 <p>сахарные присыпки</p>
-              </a>
+              
               <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" opacity="0.8"  d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+              </a>
                 <p>фрукты</p>
-              </a>
+              
               <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" opacity="0.8"  d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+              </a>
                 <p>сиропы</p>
-              </a>
+              
               <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" opacity="0.8"  d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
-                <p>джемы </p>
               </a>
+                <p>джемы </p>
+              
             
           </div>
 
-          <button class="filter">Применить</button>
+          <a class="filter-btn" href="#"><button class="submit filter">Применить</button>
+          </a>
         </div><!-- row -->
       </div><!-- /wrapper -->
 
@@ -198,7 +218,7 @@
       
 
       <div class="wrapper">
-      <section class="catalog-ice-cream">
+       <section class="catalog-ice-cream">
         <ul>
           <section class="content-row">
           <li>
@@ -306,10 +326,30 @@
            </section>
 
         </ul>
-      </section>
-      </div>
+       </section>
+      </div> <!-- /wrapper -->
 
-     
+      <div class="wrapper">
+        <div class="row">
+          <div class="pagination">
+            <a href="#!">
+              <svg class="back" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+            </a>
+            <ul>
+              <li><a class="active" href="#!">1</a></li>
+              <li><a href="#!">2</a></li>
+              <li><a href="#!">3</a></li>
+              <li><a href="#!">4</a></li>
+              <li><a href="#!">5</a></li>
+            </ul>
+            <a href="#!">
+              <svg class="forward" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#FFFFFF" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+            </a>
+          </div><!-- pagination -->
+        </div><!-- row -->
+        <hr class="divide">
+      </div><!-- wrapper -->
+
     </main>
 
 <footer class="main-footer">
