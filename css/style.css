@@ -59,7 +59,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: top 85px center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
-  }
+}
 
 .page-bg::before,
 .page-bg::after {
@@ -82,7 +82,7 @@ input[type="radio"].visually-hidden {
 }
 
 .wrapper{
-  width: 1200px;
+  width: 1150px;
   margin-left: auto;
   margin-right: auto;
 }
