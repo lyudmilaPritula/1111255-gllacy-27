@@ -15,7 +15,7 @@ body {
 .site-nav-paragraph,
 .full-basket,
 .modal {
-  display: none;
+  /*display: none;*/
 }
 
 a {
