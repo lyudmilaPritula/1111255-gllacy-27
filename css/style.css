@@ -200,12 +200,12 @@ ul.navig-site-catalog {
 
 .navig-site-catalog a:hover {
   color: #ffbc9e;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .navig-site-catalog a:focus {
   color: #ffbc9e;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .user-nav {
@@ -433,7 +433,7 @@ p.search-nav {
 }
 
 .addition-button {
-  font-weight: 400px;
+  font-weight: 400;
   padding: 15px 27px;
   margin-left: auto;
   margin-right: 20px;
@@ -508,7 +508,7 @@ ul.fact-info {
   color: #323232;
   min-height: 220px;
   line-height: 22px;
-  font-weight: medium;
+  font-weight: 500;
   margin-left: 25px;
   width: 565px;
   margin-right: 26px;
@@ -766,8 +766,8 @@ a.circle-2 {
 hr.range-1 {
   width: 177px;
   background: rgba(255, 255, 255, 0.5);
-  size: 5px;
-  margin-top: 14px;
+  font-size: 5px;
+  margin-top: 15px;
   padding-top: 5px;
   z-index: 2
 }
@@ -775,11 +775,11 @@ hr.range-1 {
 hr.range-2 {
   width: 100px;
   background: rgba(255, 255, 255, 1);
-  size: 5px;
+  font-size: 5px;
   position: absolute;
   padding-top: 5px;
   z-index: 3;
-  margin-top: -15px;
+  margin-top: -10px;
   margin-left: 50px;
 }
 
@@ -923,7 +923,6 @@ hr.range-2 {
   margin-top: -385px;
   width: 100%;
   min-height: 430px;
-  frameborder:0; 
   border:0;
   z-index: 2;
 }
@@ -1313,7 +1312,7 @@ p.developer {
   left: 715px;
   width: 543px;
   min-height: 200px;
-  direction: flex;
+  flex-direction: flex;
   justify-content: space-between;
   padding-top: 10px;
   padding-right: 24px;
@@ -1389,7 +1388,7 @@ td.price {
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 
