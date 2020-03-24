@@ -1,0 +1,11 @@
+{
+  "private": true,
++ "browserslist": [
++   "Edge 16"
++  "Chrome"
++  "Explorer"
++  "Safari"
++  "Farifox"],
+  "scripts": {
+  }
+}
